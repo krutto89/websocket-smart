@@ -23,7 +23,7 @@ wss.on('connection', (ws) => {
   };
 
   sendVitals();
-  const interval = setInterval(sendVitals, 5000); // Send vitals every minute
+  const interval = setInterval(sendVitals, 60000); // Send vitals every minute
 
   ws.on('close', () => {
     console.log('Happynest app disconnected');
